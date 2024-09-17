@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Cuisine</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1 class="global-bites">Global Bites</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About/About.html">About Us</a></li>
+                <li><a href="GlobalCuisine.html">Global Cuisine</a></li>
+                <li><a href="../PopularPicks/PopularPicks.html">Information</a></li>
+                <li><a href="../Order/Order.html">Order</a></li>
+                <li><a href="../Catering/Catering.html">Catering</a></li>
+                <li><a href="../Blog/Blog.html">Blog</a></li>
+                <li><a href="../Contact/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2 class="page-title">Explore Some of Our Most Popular Dishes!</h2>
+    <br>
+    <div class="slideshow-container">
+		<img class="script" src="sushi.jpg">
+		<img class="script" src="bowls.jpeg">
+        <img class="script" src="jerkChickensized.jpg">
+        <img class="script" src="jollofsized.jpg">
+        <img class="script" src="tacossized.jpg">
+      
+        <!-- Add more images here with class mySlides -->
+    </div> <br> <br>
+
+
+    <div class="search-container">
+        <select id="country-select">
+            <option value="all">All</option>
+            <option value="" selected disabled>Select a country</option>
+            <option value="jamaica">Jamaica</option>
+            <option value="italy">Italy</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="spain">Spain</option>
+            <option value="haiti">Haiti</option>
+            <option value="greece">Greece</option>
+            <option value="thailand">Thailand</option>
+            <option value="uk">United Kingdom</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="mexico">Mexico</option>
+            <option value="southafrica">South Africa</option>
+            <option value="usa">USA</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="brazil">Brazil</option>
+            <!-- Add more countries as needed -->
+        </select>
+        <button onclick="searchCountries()">Search</button>
+		<p class="request-text">Don't see a country? <a href="#" onclick="openRequestForm()">Click here</a> and fill out the form to request it as a menu addition!</p>
+    </div> <br>
+	
+	
+   <div class="countries-table">
+    <table>
+        <tr>
+    <td>
+        <img src="flags/jamaica.png" alt="Jamaica Flag">
+        <p>Jamaica</p>
+        <a href="menus/menu_jamaica.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/italy.jpeg" alt="Italy Flag">
+        <p>Italy</p>
+        <a href="menus/menu_italy.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/nigeria.jpg" alt="Nigeria Flag">
+        <p>Nigeria</p>
+        <a href="menus/menu_nigeria.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/spain.jpeg" alt="Spain Flag">
+        <p>Spain</p>
+        <a href="menus/menu_spain.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/haiti.png" alt="Haiti Flag">
+        <p>Haiti</p>
+        <a href="menus/menu_haiti.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/greece.png" alt="Greece Flag">
+        <p>Greece</p>
+        <a href="menus/menu_greece.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/thailand.jpeg" alt="Thailand Flag">
+        <p>Thailand</p>
+        <a href="menus/menu_thailand.html">Menu</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <img src="flags/china.jpeg" alt="China Flag">
+        <p>China</p>
+        <a href="menus/menu_china.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/japan.png" alt="Japan Flag">
+        <p>Japan</p>
+        <a href="menus/menu_japan.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/mexico.png" alt="Mexico Flag">
+        <p>Mexico</p>
+        <a href="menus/menu_mexico.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/southafrica.jpeg" alt="South Africa Flag">
+        <p>South Africa</p>
+        <a href="menus/menu_southafrica.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/usa.png" alt="USA Flag">
+        <p>USA</p>
+        <a href="menus/menu_usa.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/vietnam.jpg" alt="Vietnam Flag">
+        <p>Vietnam</p>
+        <a href="menus/menu_vietnam.html">Menu</a>
+    </td>
+    <td>
+        <img src="flags/brazil.jpeg" alt="Brazil Flag">
+        <p>Brazil</p>
+        <a href="menus/menu_brazil.html">Menu</a>
+    </td>
+	<td>
+        <img src="flags/uk.png" alt="UK Flag">
+        <p>United Kingdom</p>
+        <a href="menus/menu_uk.html">Menu</a>
+    </td>
+</tr>
+    </table>
+</div>
+        <!-- Add more countries as needed -->
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

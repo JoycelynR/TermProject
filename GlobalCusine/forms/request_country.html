@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Cuisine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+<h2>Request Form</h2>
+<form onsubmit="event.preventDefault(); showThankYouMessage();">
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="country" required><br><br>
+
+    <label for="request-date">Request Date:</label><br>
+    <input type="date" id="request-date" name="request-date" required><br><br>
+
+    <label for="menu-items">Menu Items (Max 10, Min 1):</label><br>
+    <textarea id="menu-items" name="menu-items" rows="4" cols="50" maxlength="500" required></textarea><br><br>
+
+    <input type="submit" value="Submit Request">
+</form>
+
+<script>
+    function showThankYouMessage() {
+        const formWindow = window.open('', 'formWindow');
+        formWindow.document.body.innerHTML = '<h2>Thank you for your request!</h2>';
+    }
+</script>
+
+</body>
+</html>
