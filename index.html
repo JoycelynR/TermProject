@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitForm(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Get the value of the 'firstName' input field
+            var firstName = document.getElementById('firstName').value;
+            // Display confirmation message
+            var confirmationDiv = document.getElementById('confirmationMessage');
+            confirmationDiv.innerHTML = 'Welcome ' + firstName + '! Your information has been submitted.';
+            confirmationDiv.style.display = 'block';
+            
+            // Clear form fields 
+            document.getElementById('signupForm').reset();
+        }
+    </script>
+</head>
+<body>
+
+    <h1 class="global-bites">Global Bites</h1> 
+    <h2 class="page-title">Welcome to Global Bites, where you have the world in your home!</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About/About.html">About Us</a></li>
+                <li><a href="GlobalCuisine/GlobalCuisine.html">Global Cuisine</a></li>
+                <li><a href="PopularPicks/PopularPicks.html">Information</a></li>
+                <li><a href="Order/Order.html">Order</a></li>
+                <li><a href="Catering/Catering.html">Catering</a></li>
+                <li><a href="Blog/Blog.html">Blog</a></li>
+                <li><a href="Contact/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <img src="foodWithMapSized.jpg" alt="Food Map" class="center-image"> 
+    </div>
+
+    <!-- Footer section containing sign-up form -->
+    <footer>
+        <div class="signup-section">
+            <h2 class="page-title">SIGN UP NOW FOR AN APPETIZER OF YOUR CHOICE!</h2>
+            <!-- Form for user sign-up -->
+            <form id="signupForm" onsubmit="submitForm(event)">
+                <div class="row">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" pattern=".+@.+\..+" title="Please enter a valid email address" required>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" pattern="[A-Za-z\s]+" title="First name should only contain letters and spaces" required>
+                </div>
+                <div class="row">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" pattern="\d{5}" title="Zip code should be exactly 5 digits" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" pattern="[A-Za-z\s]+" title="Last name should only contain letters and spaces" required>
+                </div>
+                <div class="row">
+                    <label for="birthday">Birthday (Optional):</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <input type="checkbox" id="ageCheck" name="ageCheck" required>
+                    <label for="ageCheck">I acknowledge that I want to receive email offers from Global Bites, and agree to the terms and conditions.</label>
+                </div>
+                <div class="row">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" pattern="\d{10}" title="Phone number should be exactly 10 digits" required>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+            <div id="confirmationMessage" style="display: none;"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

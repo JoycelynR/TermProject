@@ -1,0 +1,296 @@
+
+ /* Select the h1 element with the class "global-bites" */
+h1.global-bites {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Horizontally center items */
+    font-family: 'Pacifico', cursive; /* Use Pacifico font for an artistic handwritten style */
+    color: #228B22; /* Dark green color (Hex code: #228B22) */
+    /* Other styles for the title */
+}
+
+.logo {
+    width: 50px; /* Adjust the width of logo */
+    margin-right: 10px; /* Add space between logo and text */
+}
+h2.page-title {
+    text-align: center; /* Center-align the text */
+}
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Reduced margin for the list items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Link text color */
+  
+}
+.image-container {
+    text-align: center; /* Center-align the content inside */
+}
+
+/* CSS for slideshow container and images */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the slides horizontally */
+	align-items: center; /* Center the images vertically */
+    border: none;
+    overflow: hidden; /* Hides overflow if images are larger than container */
+	
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    transition: opacity 1s ease; 
+}
+.signup-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.signup-section {
+    background-color: #D3D3D3; /* Off-white color */ 
+    padding: 20px;
+    border-radius: 10px;
+    /* Other styles for the sign-up section */
+}
+.signup-section h2.page-title {
+    color: #333333; /* color of the signup title */
+}
+.signup-section label,
+.signup-section input,
+.signup-section select,
+.signup-section small {
+    color: #333333; /* font color */
+    /* Additional styles for text within the signup section */
+}
+.signup-section form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+}
+
+.signup-section form .row label {
+    margin-bottom: 5px;
+}
+
+.signup-section form .row input,
+.signup-section form .row select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup-section form .row input[type="checkbox"] {
+    width: auto;
+}
+
+.signup-section form .row small {
+    margin-top: 5px;
+    display: block;
+}
+
+.signup-section form .row input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CSS for styling the countries in a table */
+.countries-table {
+    margin-top: 20px;
+}
+
+table {
+    width: auto; /* Adjust table width as needed */
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: #ffff; /* #D3D3D3 Use a darker gray color code */
+    color: #000; /* Set text color to black or a contrasting color */
+}
+/* CSS rules for the two-column layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%; /* Adjust as needed */
+    /* Other styles for the columns */
+}
+
+ .star{
+	font-size: 3rem;
+	color: #ff9800;
+	background-color: unset;
+	border: none;
+ }
+ .star_rating{
+	 user-select: none;
+ }
+ /* Style for the sections in about */
+.section-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* Style for the sections in about */
+.section-container {
+    border-bottom: 2px solid #ccc; /* Add a solid border at the bottom */
+    padding-bottom: 20px; /* Adjust padding as needed */
+}
+.section-content {
+    flex: 1;
+    font-size: 1.2rem; /* Increase the font size */
+}
+
+.section-image {
+    width: 400px; /* Adjust image width as needed */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+    display: block; /* Ensure the image behaves as a block element */
+}
+/* Styles for the bottom half of the page */
+.countries-table {
+    background-color: #D3D3D3; /* Change this color to gray shade */
+    padding: 20px; /* Add padding to the bottom half */
+}
+/* Change the color of country names to black */
+.countries-table p {
+    color: #000000; /* Set the text color to black */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the video elements */
+.myVideo {
+    width: calc(33.33% - 10px); /* Adjust width based on the number of videos */
+    margin-bottom: 20px; /* Add margin between videos */
+    box-sizing: border-box;
+}
+/* Hide the controls for the video,  hides controls such as play, pause, and volume sliders that are usually shown on video elements */
+.myVideo::-webkit-media-controls {
+    display: none !important; /* For WebKit (Chrome, Safari, etc.) !important declaration is used to ensure these styles take precedence*/
+}
+
+/* removes the entire box or enclosure that contains the media controls, not just the individual controls themselve */
+.myVideo::-webkit-media-controls-enclosure {
+    display: none !important; /* For WebKit (Chrome, Safari, etc.) */
+}
+
+/* hides the panel that holds various media controls like play/pause buttons, volume controls, and seek bars.*/
+.myVideo::-webkit-media-controls-panel {
+    display: none !important; /* For WebKit (Chrome, Safari, etc.) */
+}
+
+/* It removes the play button that is typically displayed in the center of the video when it’s not playing. */
+.myVideo::-webkit-media-controls-overlay-play-button {
+    display: none !important; /* For WebKit (Chrome, Safari, etc.) */
+}
+/* Basic styling for the order form */
+.order-form {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+/* Blog */
+.blogcontainer {
+    display: flex;
+    justify-content: space-between; /* Distribute columns evenly */
+}
+
+.column {
+    width: 30%;
+    margin: 20px;
+    text-align: center; /* Center-align text */
+}
+
+.column img {
+    display: block;
+    margin: 0 auto; /* Center-align images */
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 20px;
+}
