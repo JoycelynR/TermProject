@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Order </title>
+		 <link rel="stylesheet" href="../styles.css">
+		</head>
+<body>
+	<h1 class="global-bites">Global Bites</h1>
+	<h2 class="page-title">Order</h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About/About.html">About Us</a></li>
+                <li><a href="../GlobalCusine/GlobalCusine.html">Global Cuisine</a></li>
+                <li><a href="../PopularPicks/PopularPicks.html">Information</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="../Catering/Catering.html">Catering</a></li>
+                <li><a href="../Blog/Blog.html">Blog</a></li>
+                <li><a href="../Contact/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    <div class="video-container">
+        <video class="myVideo" width="100%" height="auto" controls autoplay muted>
+            <source src="smoke.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="myVideo" width="100%" height="auto" controls autoplay muted>
+            <source src="smoke.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="myVideo" width="100%" height="auto" controls autoplay muted>
+            <source src="smoke.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+	 <h2 class="page-title">Order Your Favorite Dish</h2>
+
+    <div class="order-form">
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="country">Choose Country:</label>
+                <select id="country" name="country">
+                    <option value="" selected disabled>Choose a Country</option>
+                    <option value="jamaica">Jamaica</option>
+                    <option value="italy">Italy</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="spain">Spain</option>
+                    <option value="haiti">Haiti</option>
+                    <option value="greece">Greece</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="china">China</option>
+                    <option value="japan">Japan</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="southafrica">South Africa</option>
+                    <option value="usa">USA</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="brazil">Brazil</option>
+                </select>
+             </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces" required>
+
+            </div>
+            <div class="form-group">
+                <label for="number">Contact Number:</label>
+                <input type="tel" id="number" name="number" placeholder="Enter Your Contact Number" pattern="[0-9]{10}" title="Contact number should be 10 digits" required>
+            </div>
+            <div class="form-group">
+                <label for="dishName">Dish Name:</label>
+                <input type="text" id="dishName" name="dishName" placeholder="Enter Dish Name"  pattern="[A-Za-z\s]+" title="Dish name should only contain letters and spaces" required>
+            </div>
+            <!-- Other form fields -->
+            <div class="form-group">
+                <input type="submit" value="Place Order">
+            </div>
+        </form>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
