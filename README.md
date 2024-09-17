@@ -5,10 +5,10 @@
   Want the website to be both informative and transactional, catering to both individual customers and businesses planning events
 
 Requirements:
-Multiple Pages
+Multiple Pages,
 Include HTML, CSS, JavaScript
-Forms
-Neat
-Functional
+Forms,
+Neat,
+Functional,
 Multiple Features
 
